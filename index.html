@@ -520,6 +520,40 @@
             border-radius: 2px;
         }
 
+        /* Tablet Styles */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px 30px;
+                gap: 20px;
+            }
+            
+            .app-title {
+                font-size: 2em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .roles-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .calculator-inputs {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile Styles */
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -529,27 +563,321 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
+                padding: 20px;
             }
             
             .header-content {
                 text-align: center;
             }
             
-            .header h1 {
-                font-size: 2em;
+            .app-title {
+                font-size: 1.8em;
+            }
+            
+            .app-subtitle {
+                font-size: 1em;
             }
             
             .logo {
-                max-width: 150px;
+                max-width: 120px;
             }
             
             .navigation {
                 flex-direction: column;
                 align-items: center;
+                gap: 8px;
+            }
+            
+            .nav-btn {
+                width: 100%;
+                max-width: 300px;
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+            
+            .section {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .section h2 {
+                font-size: 1.6em;
+                margin-bottom: 15px;
+            }
+            
+            .section h3 {
+                font-size: 1.2em;
+                margin: 20px 0 10px 0;
+                padding-left: 15px;
             }
             
             .feature-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .feature-card {
+                padding: 20px;
+            }
+            
+            .feature-card h4 {
+                font-size: 1.2em;
+                margin-bottom: 12px;
+            }
+            
+            .workflow-step {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+                margin: 10px 0;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+            
+            .compliance-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .compliance-item {
+                padding: 15px;
+            }
+            
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .stat-card {
+                padding: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2em;
+            }
+            
+            .roles-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .role-card {
+                padding: 20px;
+            }
+            
+            .benefits-list {
+                padding: 20px;
+            }
+            
+            .benefits-list li {
+                padding: 8px 0;
+                padding-left: 25px;
+                font-size: 14px;
+            }
+            
+            .loan-limits {
+                padding: 20px;
+            }
+            
+            .limit-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+                padding: 12px 0;
+            }
+            
+            .limit-value {
+                font-size: 1.1em;
+            }
+            
+            .api-integration {
+                padding: 20px;
+            }
+            
+            .amortization-calculator {
+                padding: 20px;
+            }
+            
+            .calculator-inputs {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .input-group input {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .calculate-btn {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
+            
+            .summary-cards {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .summary-card {
+                padding: 15px;
+            }
+            
+            .summary-card h4 {
+                font-size: 1em;
+            }
+            
+            .summary-card .value {
+                font-size: 1.3em;
+            }
+            
+            .charts-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .chart-card {
+                padding: 20px;
+            }
+            
+            .chart-container {
+                height: 250px;
+            }
+            
+            .chart-legend {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .amortization-table {
+                overflow-x: auto;
+                margin-top: 15px;
+            }
+            
+            .amortization-table table {
+                min-width: 600px;
+            }
+            
+            .amortization-table th,
+            .amortization-table td {
+                padding: 8px 6px;
+                font-size: 12px;
+            }
+        }
+
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+            
+            .header {
+                padding: 15px;
+                gap: 15px;
+            }
+            
+            .app-title {
+                font-size: 1.5em;
+            }
+            
+            .logo {
+                max-width: 100px;
+            }
+            
+            .nav-btn {
+                padding: 12px 15px;
+                font-size: 13px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+            
+            .section h2 {
+                font-size: 1.4em;
+            }
+            
+            .feature-card {
+                padding: 15px;
+            }
+            
+            .workflow-step {
+                padding: 12px;
+            }
+            
+            .step-number {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .stat-card {
+                padding: 15px;
+            }
+            
+            .stat-number {
+                font-size: 1.8em;
+            }
+            
+            .summary-cards {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .chart-container {
+                height: 200px;
+            }
+            
+            .amortization-table table {
+                min-width: 500px;
+            }
+            
+            .amortization-table th,
+            .amortization-table td {
+                padding: 6px 4px;
+                font-size: 11px;
+            }
+        }
+
+        /* Landscape Mobile Styles */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .header-content {
+                text-align: left;
+            }
+            
+            .navigation {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-btn {
+                width: auto;
+                min-width: 120px;
+            }
+            
+            .charts-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .chart-container {
+                height: 200px;
             }
         }
     </style>
@@ -651,7 +979,7 @@
                 <div class="workflow-step">
                     <div class="step-number">2</div>
                     <div>
-                        <strong>KYC Collection:</strong> Staff collects all required KYC details as per CBB regulations (CPR, passport, income proof, address verification)
+                        <strong>KYC Collection:</strong> Staff collects all required KYC details as per CBB regulations (passport, income proof, address verification)
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -675,7 +1003,7 @@
                 <div class="workflow-step">
                     <div class="step-number">6</div>
                     <div>
-                        <strong>Contract Signing:</strong> Customer reviews and signs the loan contract (digital signature capability)
+                        <strong>Contract Signing:</strong> Customer reviews and signs the loan contract
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -769,9 +1097,7 @@
                         <li>• Digital contract generation for approved loans</li>
                         <li>• Secure storage of signed contracts</li>
                         <li>• Quick retrieval for audits or queries</li>
-                        <li>• Contract template management</li>
                         <li>• Version control for contract updates</li>
-                        <li>• Digital signature integration</li>
                     </ul>
                 </div>
 
@@ -807,7 +1133,7 @@
             <div class="compliance-grid">
                 <div class="compliance-item">
                     <h4>Document Capture</h4>
-                    <p>CPR, Passport, Visa, and other identification documents with secure digital storage</p>
+                    <p>Passport, Visa, and other identification documents with secure digital storage</p>
                 </div>
                 <div class="compliance-item">
                     <h4>Income Verification</h4>
@@ -824,7 +1150,7 @@
                 <div class="workflow-step">
                     <div class="step-number">1</div>
                     <div>
-                        <strong>Identity Verification:</strong> Collect and verify CPR/Passport
+                        <strong>Identity Verification:</strong> Collect and verify Passport
                     </div>
                 </div>
                 <div class="workflow-step">
@@ -861,7 +1187,6 @@
                     <li>Secure document storage with version control</li>
                     <li>Data backup and recovery mechanisms</li>
                     <li>Regular security audits and compliance checks</li>
-                    <li>GDPR-compliant data handling procedures</li>
                 </ul>
             </div>
         </div>
